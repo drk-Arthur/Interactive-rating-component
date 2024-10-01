@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #141519;
+    color: hsl(0, 0%, 100%);
+    font-family: "Overpass", sans-serif;
+}
+
+.display {
+    position: absolute;
+    /*background-color: #202731;*/
+    background-image: linear-gradient(#1F2630, #171E28);
+    padding: 1em;
+    margin: auto;
+    width: 80vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    box-shadow: 4px 4px 1px rgba(0, 0, 0, 0.068);
+}
+
+#rating {
+    display: block;
+}
+
+.image img {
+    padding: 1em;
+    background-color: #272E38;
+    border-radius: 50%;
+
+    margin-left: 0.6em;
+}
+
+h1 {
+    padding: 1em 0;
+    font-weight: 400;
+    margin-left: 0.6em;
+}
+
+p {
+    font-size: 15px;
+    color: hsl(217, 12%, 63%);
+    line-height: 1.5em;
+    margin-left: 1em;
+    width: 76vw;
+}
+
+.buttons {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.rate {
+    padding: 1em;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 20px;
+
+    color: hsl(217, 12%, 63%);
+    background-color: #272E38;
+    text-align: center;
+    font-weight: bold;
+}
+
+.rate:hover {
+    background-color: white;
+    color: #141519;
+    transition-duration: 0.5s;
+}
+
+.submit {
+    text-align: center;
+    color: #141519;
+    background-color: hsl(25, 97%, 53%);
+    font-family: "Overpass", sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 1em;
+
+    border-radius: 30px;
+    width: 70vw;
+    margin: 1.5em auto;
+    cursor: pointer;
+    letter-spacing: 0.2em;
+}
+
+.submit:hover {
+    background-color: white;
+    transition-duration: 0.5s;
+}
+
+.ty-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1em 0 1.5em;
+}
+
+#result {
+    margin: auto;
+    color: hsla(25, 72%, 50%, 0.952);
+    background-color: #262F38;
+    padding: .5em 1em;
+    text-align: center;
+    border-radius: 20px;
+    width: 30vw;
+    font-size: 15px;
+}
+
+.ty-title {
+    text-align: center;
+}
+
+#submitted p {
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+#submitted {
+    display: none;
+}
+
+
+@media screen and (min-width:1024px) {
+    .display {
+        width: 35vw;
+        border-radius: 40px;
+    }
+
+    .submit {
+        width: 30vw;
+    }
+
+    p {
+        width: 30vw;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    #submitted p {
+        margin:auto
+    }
+
+    #result {
+        width: 15vw;
+    }
+
+    #submitted {
+        align-items: center;
+    }
+
+    .ty-title {
+        padding: 1.5em 0 0.5em;
+    }
+}
+
